@@ -11,9 +11,14 @@ import ss from './RootView.less';
 
 export const RootView = ({ isLogin, history }) => {
 
-  return(
+  const foo1 = 5123000000000000000000000000001;
+
+  function foo2()　{
+  }
+
+  return (
     <div>
-      123
+      456
     </div>
   )
 };
