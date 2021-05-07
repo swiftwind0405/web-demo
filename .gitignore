@@ -1,0 +1,19 @@
+# ide
+.idea/
+jsconfig.json
+
+# dependencies
+/node_modules
+/npm-debug.log*
+/yarn-error.log
+/yarn.lock
+/package-lock.json
+
+# production
+/dist
+/out
+
+# misc
+.DS_Store
+tmp/
+/TODO.md

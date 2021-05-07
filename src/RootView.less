@@ -1,0 +1,157 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: -apple-system, 'SF UI Text', 'Helvetica Neue', Arial, 'PingFang SC',
+  'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Zen Hei', sans-serif;
+}
+//
+:global {
+  .ant-menu-inline .ant-menu-item {
+    text-overflow: clip;
+  }
+  .ant-menu-inline .ant-menu-submenu-title {
+    text-overflow: clip;
+  }
+  // 替换 Antd 的组件默认样式
+  .ant-btn.ant-btn-primary:focus {
+    background-color: @primary-color;
+    border-color: @primary-color;
+  }
+  // Checkbox
+  .ant-checkbox-inner {
+    border-radius: 2px;
+  }
+
+  // Modal
+  .ant-modal-header {
+    padding: 20px;
+  }
+
+  .ant-modal-title {
+    font-weight: 700;
+  }
+
+  .ant-modal-footer {
+    border-top-color: transparent;
+  }
+
+  .ant-modal-footer button + button {
+    margin-left: 20px;
+  }
+
+  // Dropdown
+
+  .ant-dropdown-menu-item:hover, .ant-dropdown-menu-submenu-title:hover {
+    color: @primary-color;
+  }
+
+  // 分页
+  .ant-pagination-options-quick-jumper,
+  .ant-pagination .ant-select-selector {
+    height: 28px !important;
+    line-height: 28px !important;
+  }
+  .ant-pagination .ant-select-selection-search-input {
+    height: 26px !important;
+  }
+
+  .ant-pagination .ant-select-selection-item {
+    height: 26px !important;
+    line-height: 26px !important;
+  }
+
+  .ant-pagination-item-link,
+  .ant-pagination .ant-select-selector,
+  .ant-pagination-options-quick-jumper input,
+  .ant-pagination-item {
+    border-radius: 2px !important;
+  }
+
+  .ant-pagination-options-quick-jumper input {
+    line-height: 14px !important;
+    padding: 5px 11px !important;
+  }
+
+  // Table
+  .ant-table-row-expand-icon {
+    border-radius: 2px;
+    border-color: @primary-color;
+    color: @primary-color;
+  }
+
+  .ant-table-thead > tr > th {
+    font-weight: 700;
+    white-space: pre;
+  }
+
+  // PageContainer
+  .ant-page-header-heading-title {
+    font-weight: 400;
+  }
+  // 工作流水印
+  .bjs-powered-by {
+    display: none;
+  }
+  #canvas > .bjs-container{
+    border: 1px solid #ccc;
+    margin-bottom: 32px;
+  }
+
+  .ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button {
+    border-left: none;
+  }
+
+  .ant-popover-title {
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+  }
+
+  // Modal.confirm
+  .ant-modal-confirm-body-wrapper {
+
+  }
+
+  .ant-modal-confirm .ant-modal-body {
+    padding: 25px;
+  }
+
+  .ant-modal-confirm .ant-modal-confirm-btns .ant-btn + .ant-btn {
+    margin-left: 20px !important;
+  }
+
+  .ant-modal-confirm-body {
+    .ant-modal-confirm-title {
+      color: #333;
+      font-weight: 700;
+    }
+
+    .ant-modal-confirm-content {
+      margin-top: 14px;
+      color: #666;
+    }
+  }
+}
+
+.wrapper {
+  height: 100%;
+
+  :global {
+    .ant-layout-header {
+      background: #fff;
+      padding: 0 @layoutGap;
+    }
+  }
+}
